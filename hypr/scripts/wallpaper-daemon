@@ -26,6 +26,16 @@ switch_wall() {
     hyprctl hyprpaper wallpaper ",$wp"
 }
 
+notify_wall() {
+    local wp="$1"
+
+    if pgrep -x "hyprpaper" >/dev/null; then
+        notify-send "Wallpaper Changed" -i "$wp" --app-name=Wallpaper
+    elif pgrep -x "swww" >/dev/null; then
+        notify-send "Wallpaper Changed" -i "$wp" --app-name=Wallpaper
+    fi
+}
+
 wait_for_hyprpaper
 
 while true; do
@@ -41,12 +51,12 @@ while true; do
         new="$(choose)"
     fi
 
-
     if [ -f "$LAST_WALL" ] && [ "$new" = "$(cat "$LAST_WALL")" ]; then
         :
     else
         echo "$new" > "$LAST_WALL"
         switch_wall "$new"
+        notify_wall "$new"
     fi
 
     for ((i=0; i<INTERVAL; i++)); do
