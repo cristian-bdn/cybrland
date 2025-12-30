@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-WALLPAPER_DIR="$HOME/.config/hypr/theme/walls"
+WALLPAPER_DIR="$HOME/.config/hypr/walls"
 LAST_WALL="$HOME/.cache/last_wallpaper.txt"
 TRIGGER="$HOME/.cache/wallpaper_trigger"
 INTERVAL=900 # 60 = 1min; 900 = 15min
