@@ -1,18 +1,22 @@
 ![Cybrland banner](./assets/banner.jpg)
 
 # Cybrland
-**A complete design system and dotfile setup for Arch Hyprland, inspired by cyberpunk aesthetics.**
+**A dotfile setup for Arch Hyprland, inspired by cyberpunk aesthetics.**
+**A complete design system with clear [design philosophy](PHILOSOPHY.md).**
 
-**Version:** v0.9.0  |  **Status:** WIP (Dec 2025)  
+**Version:** v0.9.5  |  **Status:** Stable release (Dec 2025)  
 
-## Features
-- 🔴 Unified cyberpunk color palette across all applications
-- 🟣 Terminal-first workflow with TUI/CLI tools
-- 🟡 Custom themes for 15+ programs
-- 🔵 Modular configs - use what you need
-- 🟢 Beginner-friendly documentation
+## What's inside
 
----
+### Main
+- **Unified aesthetic** - Custom cyberpunk palette + Geist Mono Nerd Font across 15+ applications
+- **Terminal-centric** - Fast, integrated TUI/CLI workflow with seamless component interaction
+- **Modular & flexible** - Install everything or cherry-pick components
+- **Documented** - Guides and comments for beginners + power-user patterns (systemd, sparse checkout)
+
+### Extras
+- **Wallpaper rotation daemon** - Pseudo-random cycling (never repeats consecutively; wallpapers included)
+- **Desktop brightness control** - Mousewheel adjustment via DDC/CI (OSD-free)
 
 ## Showcase
 <p align="left">
@@ -63,7 +67,7 @@
 
 ## Included Themes
 
-### ✅ Core System (Stable)
+### 🟢 Core System
 Complete themes with full documentation:
 
 - **[hyprland](./hypr/readme.md)** - Tiling window manager
@@ -74,68 +78,73 @@ Complete themes with full documentation:
 - **[swaync](./swaync/readme.md)** - Notification daemon
 - **[starship](./starship/readme.md)** - Cross-shell prompt
 
-### 🛠️ Utilities (Stable)
-- **[btop](./btop/readme.md)** - System resource monitor
-- **[nvtop](./nvtop/readme.md)** - GPU resource monitor
-- **[yazi](./yazi/readme.md)** - Terminal file manager
-- **[broot](./broot/readme.md)** - Directory navigator
-- **[fzf](./fzf/readme.md)** - Fuzzy finder
-- **[micro](./micro/readme.md)** - Lightweight text editor
-- **[cava](./cava/readme.md)** - Audio visualizer
+### 🟢 Utilities
+- **[btop](./btop/readme.md)** - TUI System resource monitor
+- **[yazi](./yazi/readme.md)** - TUI Terminal file manager
+- **[broot](./broot/readme.md)** - CLI Directory navigator
+- **[fzf](./fzf/readme.md)** - CLI Fuzzy finder
+- **[micro](./micro/readme.md)** - TUI Lightweight text editor
+- **[cava](./cava/readme.md)** - CLI Audio visualizer
+- **[bat](./bat/readme.md)** - CLI Syntax-highlighted file viewer 
 
-### 🧪 Beta / Alpha
-- **[neovim](./neovim/readme.md)** 🟡 Beta - Fully themed; polishing
-- **[firefox](./firefox/readme.md)** 🔴 Alpha - Themed; major refactor planned
-- **Cybrcursors** - 🔴 Alpha - Fully themed; polishing
-- **VSCode** 🔴 Alpha - Early stage
-- **Obsidian** 🔴 Alpha - Plugin-based, standalone theme planned
-
-### 📋 Planned (v1.5+)
-- **Spicetify** - Spotify client theme
-- **Vencord** - Discord client theme
-- **rmpc** - Music player theme
-- **Theme switcher** - Color theme switcher
+### 🟡 Testing
+- **[neovim](./neovim/readme.md)** - Beta - *Fully themed; polishing*
+- **[firefox](./firefox/readme.md)** - Alpha - *Themed; major refactor planned*
+- **Cybrcursors** - Alpha - *Fully themed; polishing*
+- **VSCode** - Alpha - *Early stage*
+- **Obsidian** - Alpha - *Plugin-based, standalone theme planned*
 
 ## Related projects
-- [Cybrpapers](https://github.com/scherrer-txt/cybrpapers) - Hand-crafted cyberpunk wallpapers
+- [Cybrpapers](https://github.com/scherrer-txt/cybrpapers) - Hand-crafted wallpaper collection
 - [Cybrcolors](https://github.com/scherrer-txt/cybrcolors) - Unified color palette
-- Cybrcursors - custom mouse cursors ([preview](https://8upload.com/image/d91ecbad191c4ec9/image_3.jpg))
+- Cybrcursors - Custom mouse cursors ([preview](https://8upload.com/image/d91ecbad191c4ec9/image_3.jpg))
 
 ## Roadmap
 
 ### v1.0.0 (2025-12-31)
-- [x] Technical documentation  
-- [x] Themes
-  - [x] hyprland  
-  - [x] kitty  
-  - [x] fish  
-  - [x] waybar  
-  - [x] rofi  
-  - [x] swaync  
-  - [x] starship  
-  - [x] btop  
-  - [x] nvtop
-  - [x] yazi  
-  - [x] broot  
-  - [x] fzf  
-  - [x] micro
-  - [x] cava  
-  - [x] neovim (*beta*)
-  - [x] firefox (*alpha*)
+- [x] Cybrland v1.0.0
+  - [x] Documentation & install guides  
+  - [x] Themes
+    - [x] hyprland, kitty, fish, waybar, rofi, swaync, starship
+    - [x] btop, yazi, broo , fzf, micr , cava, bat
+    - [x] neovim (*beta*)
+    - [x] firefox (*alpha*)
+- [x] Cybrcolors v1.0
+- [x] Cybrpapers v1.0
 
-### v1.5.0 (Early 2026)
-- [ ] Installer script
-- [ ] Extended multi-distro support documentation
-- [ ] Finish alpha themes (Firefox, VSCode, Obsidian)
-- [ ] Cybrcursors release
-- [ ] Music player theme (rmpc/Spicetify)
-- [ ] Chat app theme (Vencord)
-- [ ] Theme switcher
-- [ ] Additional Cybrpaper wallpapers
+### v1.5.0 (Early-mid 2026)
+- [ ] Cybrland: Installer script & override patterns
+- [ ] Cybrland: Extended multi-distro support documentation
+- [ ] Cybrland: System-wide unification of syntax highlights, based on [tonsky's](https://github.com/tonsky) highlight [philosophy](https://tonsky.me/blog/syntax-highlighting/)
+- [ ] Cybrland: Finish alpha themes (Firefox, VSCode, Obsidian)
+- [ ] Cybrland: Music player theme (rmpc/Spicetify)
+- [ ] Cybrland: Chat app theme (Vencord)
+- [ ] Cybrland: Theme switcher
+- [ ] Cybrpapers v2.0: Additional Cybrpaper wallpapers
+- [ ] Cybrcursors v1.0
+- [ ] Cybrscreen v1.0: Screensaver(s)
 
 **Under consideration:**
 - Replace waybar/swaync/rofi with quickshell
 - Alternative launcher (Vicinae or Walker)
 
-### v2.0.0 (mid 2026)
-- [ ] GTK theme  
+### v2.0.0 (Mid-late 2026)
+- [ ] Cybrland: GTK theme  
+- [ ] ???  
+
+## Credits & Inspiration
+
+This project builds on the work of many talented creators:
+
+**Dotfile foundations:**
+- [Matt-FTW/dotfiles](https://github.com/Matt-FTW/dotfiles) - Many of Hyprland configs are based on their dotfiles, theirs was my first Hyprland theme, and thanks to them I discovered Catppuccin
+
+**Theming & aesthetics:**
+- [Catppuccin](https://github.com/catppuccin/catppuccin) - This project showed me what's possible with themes, it's overall scope is inspiration and aspiration at the same time
+- [Cyberpunk 2077 UI Bible](https://www.behance.net/gallery/118663901/Cyberpunk-2077User-Interface-(Part-1)) - Endless source of inspiration and ideas (s/o [Vladimír Vilimovský](https://www.behance.net/vladimirvilimovsky), [Jakub Knapik](https://www.linkedin.com/in/jakub-knapik-56741931), [Robert Bielecki](http://robertbielecki.com/), [Imanol Delago Salazar](https://www.artstation.com/artwork/WKzrBG), [Marcin Stepien](https://www.artstation.com/artwork/GaVGaz), [Simon Besombes](https://www.artstation.com/artwork/285r4a), [Kamil Piotrowski](https://www.artstation.com/artwork/285lYa), [Zuzanna Dabrowa](https://www.artstation.com/artwork/d8RnZ1), [Wojciech Chalinski](https://www.artstation.com/artwork/2855DY), [Pawel Matuszak](https://www.artstation.com/artwork/NxeNDN), [Mateusz Walus](https://www.artstation.com/artwork/5X4OLO) and the army of unnamed and uncredited from CD Projekt RED, who made Cyberpunk 2077 possible)
+
+**Community:**
+- [r/unixporn](https://reddit.com/r/unixporn) - Their [feedback](https://www.reddit.com/r/unixporn/comments/1ouzvfy/hyprland_cybrland_v010/) was the biggest impulse for me to release the dotfiles.
+- [Cyberspace.online](https://cyberspace.online) - Absolutely great community where I found my digital home after many years of wandering and lurking. Their support was of immensely important to keep me going.
+
+If I missed anyone, feel free to open an issue!

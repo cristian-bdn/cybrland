@@ -1,3 +1,10 @@
+// ---------------------------------------
+// CYBRrofi    rofi launcher config (part of cybrland)
+// Project:    https://github.com/scherrer-txt/cybrland
+// Author:     scherrer-txt   |   License:     MIT
+// Source:     ~/.config/rofi/launcher.rasi
+// ---------------------------------------
+
 @theme "~/.config/rofi/style.rasi"
 
 window {

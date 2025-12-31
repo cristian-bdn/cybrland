@@ -1,3 +1,10 @@
+// ---------------------------------------
+// CYBRrofi    rofi global settings (part of cybrland)
+// Project:    https://github.com/scherrer-txt/cybrland
+// Author:     scherrer-txt   |   License:     MIT
+// Source:     ~/.config/rofi/theme/cybrlauncher.rasi
+// ---------------------------------------
+
 * {
 	background:						#03040890;
 	background-full:				#030408FF;

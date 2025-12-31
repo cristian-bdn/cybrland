@@ -1,3 +1,10 @@
+# ---------------------------------------
+# CYBRcava    cava theme (part of cybrland)
+# Project:    https://github.com/scherrer-txt/cybrland
+# Author:     scherrer-txt   |   License:     MIT
+# Source:     ~/.config/cava/config
+# ---------------------------------------
+
 [color]
 
 # Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.

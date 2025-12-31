@@ -1,3 +1,10 @@
+// ---------------------------------------
+// CYBRrofi    rofi theme (part of cybrland)
+// Project:    https://github.com/scherrer-txt/cybrland
+// Author:     scherrer-txt   |   License:     MIT
+// Source:     ~/.config/rofi/style.rasi
+// ---------------------------------------
+
 @theme "~/.config/rofi/theme/cybrlauncher.rasi"
 
 configuration {
@@ -131,9 +138,6 @@ textbox-prompt-colon {
 	text-color:						@re0;
 	str:							" ";
 }
-
-
-// --- Mess
 
 button {
 	padding:						@gap;

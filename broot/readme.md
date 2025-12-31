@@ -8,24 +8,23 @@
 ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░ ░▒▓██████▓▒░  ░▒▓█▓▒░     
 ```
 
-> [!NOTE]
-> broot uses ANSI colors defined by [kitty](../kitty/readme.md), so be sure to have kitty installed and configured first!
-
 ## Result
 <img src="../assets/inspiration/insp-broot.png" width="800"/></td>
 
 ## Steps
-### 1. Install broot
-```sh
-sudo pacman -S broot
-```
-### 2. Create theme folder and file
+### 0. Before you start
+- Make sure [Geist Mono Nerd Font](../INSTALL.md##Prerequisites&Setup) is installed
+- Make sure kitty is installed: `sudo pacman -S kitty` and theme is applied
+- Make sure broot is installed: `sudo pacman -S broot`
+- See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
+
+### 1. Create theme folder and file
 ```sh
 mkdir -p ~/.config/broot/skins
 $EDITOR ~/.config/broot/skins/CYBRbroot.hjson
 ```
-### 3. Insert [CYBRbroot](CYBRbroot.hjson)
-### 4. Apply theme
+### 2. Insert [CYBRbroot](CYBRbroot.hjson)
+### 3. Apply theme
 ```sh
 # Open config
 $EDITOR ~/.config/broot/config.hjson
@@ -48,7 +47,7 @@ luma: [
 file: skins/CYBRbroot.hjson
 }
 ```
-### 5. Restart terminal
+### 4. Restart terminal
 ```sh
 pkill $TERM
 ```

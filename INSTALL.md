@@ -23,11 +23,14 @@ On Arch Linux:
 # Essential tools
 sudo pacman -S kitty fish hyprland waybar rofi swaync
 
-# Fonts
-sudo pacman -S otf-geist-mono-nerd
+# Font
+curl -L https://github.com/ryanoasis/nerd-fonts/releases/latest/download/GeistMono.zip -o GeistMono.zip
+mkdir -p ~/.local/share/fonts
+unzip GeistMono.zip -d ~/.local/share/fonts/GeistMono
+fc-cache -fv
 
 # Optional utilities
-sudo pacman -S broot btop cava firefox fzf lm_sensors micro nvtop starship yazi
+sudo pacman -S broot btop cava firefox fzf lm_sensors micro nvtop starship yazi git
 
 # Hardware monitoring setup
 sudo sensors-detect

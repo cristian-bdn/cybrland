@@ -12,24 +12,18 @@
 <img src="../assets/inspiration/insp-hypr.png" width="800"/></td>
 
 # Steps
-### 1. Install Geist Mono Nerd Font
-```sh
-curl -L https://github.com/ryanoasis/nerd-fonts/releases/latest/download/GeistMono.zip -o GeistMono.zip
-mkdir -p ~/.local/share/fonts
-unzip GeistMono.zip -d ~/.local/share/fonts/GeistMono
-fc-cache -fv
-```
-### 2. Install hyprland
-```sh
-sudo pacman -S hyprland
-```
+### 0. Before you start
+- Make sure [Geist Mono Nerd Font](../INSTALL.md##Prerequisites&Setup) is installed
+- Make sure hyprland is installed: `sudo pacman -S hyprland`
+- Make sure `git` is installed: `sudo pacman -S git`
+- See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
 
-### 3. Backup existing config (if any)
+### 1. Backup existing config (if any)
 ```sh
 [ -d ~/.config/hypr ] && mv ~/.config/hypr ~/.config/hypr.backup
 ```
 
-### 4. Download and install hyprland configs
+### 2. Download and install hyprland configs
 ```sh
 # Download hyprland directory
 git clone --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git
@@ -45,7 +39,7 @@ mv -i ~/cybrland/hypr ~/.config
 cd ~ && rm -rf cybrland
 ```
 
-### 5. Verify installation
+### 3. Verify installation
 ```sh
 ls -R ~/.config/hypr
 ```
@@ -81,14 +75,14 @@ chmod +x ~/.config/hypr/scripts/*
 ```
 </details>
 
-### 6. Configure for your system
+### 4. Configure for your system
 You'll need to change some settings in hyprland config to match your machine.
 
 ```sh
 $EDITOR ~/.config/hypr/hyprland.conf
 ```
 
-#### 6a. Monitor setup
+#### 4a. Monitor setup
 Check your monitor configuration:
 ```sh
 hyprctl monitors
@@ -132,7 +126,7 @@ workspace = 10, monitor:$first, default:true
 ...
 ```
 
-#### 6b. Keyboard layout (optional)
+#### 4b. Keyboard layout (optional)
 ```sh
 $EDITOR ~/.config/hypr/hyprland.conf
 ```
@@ -146,7 +140,7 @@ input {
 }
 ```
 
-#### 6c. Keybinds (recommended)
+#### 4c. Keybinds (recommended)
 Review and customize keybinds in `# === BINDS ===` section. The config includes organized sections for:
 - Applications, Notifications, Bar
 - Pickers/Launchers, Screenshots
@@ -154,7 +148,7 @@ Review and customize keybinds in `# === BINDS ===` section. The config includes 
 - Workspaces, Monitors
 - Media controls
 
-#### 6d. Autostart apps
+#### 4d. Autostart apps
 ```sh
 $EDITOR ~/.config/hypr/scripts/apps
 ```
@@ -162,14 +156,14 @@ Here you can define which apps should start on boot. I use sleep to give the OS 
 Comment out apps you don't want to launch on startup, add those you want.
 
 
-#### 6e. Essential services
+#### 4e. Essential services
 ```sh
 $EDITOR ~/.config/hypr/scripts/services
 ```
 
 These are essential services for Hyprland to function properly.
 
-### 7. Random wallpaper
+### 5. Random wallpaper
 This script cycles wallpapers in a pseudo-random pattern (never shows the same wallpaper twice in a row).
 
 ```sh

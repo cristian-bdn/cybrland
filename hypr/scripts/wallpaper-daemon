@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+# ---------------------------------------
+# CYBRwall    random wallpaper script (part of cybrland)
+# Project:    https://github.com/scherrer-txt/cybrland
+# Author:     scherrer-txt   |   License:     MIT
+# Source:     ~/.config/hypr/scripts/wallpaper-daemon
+# ---------------------------------------
+
 
 WALLPAPER_DIR="$HOME/.config/hypr/walls"
 LAST_WALL="$HOME/.cache/last_wallpaper.txt"
