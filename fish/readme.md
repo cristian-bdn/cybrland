@@ -23,19 +23,12 @@ $EDITOR ~/.config/fish/config.fish
 ```
 ### 2. Insert [config.fish](../fish/config.fish)
 
-### 3. Create theme file
+### 3. Restart fish
 ```sh
-$EDITOR ~/.config/fish/CYBRfish.fish
-```
-### 4. Insert [CYBRfish](../fish/CYBRfish.fish)
-
-### 5. Apply theme
-```sh
-source ~/.config/fish/CYBRfish.fish
-  echo done
+exec fish
 ```
 
-### 6. Test
+### 4. Test
 ```sh
 for var in (set -n | grep fish_color_)
 	set color (string replace "fish_color_" "" $var)

@@ -10,7 +10,6 @@ set -x LANG en_US.UTF-8
 set -x LC_TIME en_DK.UTF-8
 set -gx EDITOR micro
 set -gx VISUAL visual-studio-code-git
-set -x SSH_AUTH_SOCK $XDG_RUNTIME_DIR/ssh-agent.socket
 set -gx STARSHIP_CONFIG ~/.config/starship.toml
 
 set -gx TERM xterm-kitty
