@@ -35,7 +35,7 @@ unzip GeistMono.zip -d ~/.local/share/fonts/GeistMono
 fc-cache -fv
 
 # Optional utilities
-sudo pacman -S broot btop cava firefox fzf lm_sensors micro nvtop starship yazi git fastfetch
+sudo pacman -S broot btop cava firefox fzf lm_sensors micro nvtop starship yazi git fastfetch newsboat
 
 # Hardware monitoring setup
 sudo sensors-detect

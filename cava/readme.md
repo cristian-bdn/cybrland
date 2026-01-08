@@ -15,6 +15,7 @@
 ### 0. Before you start
 - Make sure cava is installed: `sudo pacman -S cava`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
+- [Github](https://github.com/karlstav/cava)
 
 ### 1. Create theme file
 ```sh

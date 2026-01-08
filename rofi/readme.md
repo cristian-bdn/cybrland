@@ -21,6 +21,7 @@
 - Make sure swaync is installed: `sudo pacman -S kitty`
 - Make sure `git` is installed: `sudo pacman -S git`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
+- [Github](https://github.com/davatorium/rofi) | [Arch Wiki](https://wiki.archlinux.org/title/Rofi)
 
 ### 1. Download rofi configs
 ```sh

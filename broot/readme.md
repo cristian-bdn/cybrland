@@ -17,6 +17,7 @@
 - Make sure kitty is installed: `sudo pacman -S kitty` and theme is applied
 - Make sure broot is installed: `sudo pacman -S broot`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
+- [Github](https://github.com/Canop/broot)
 
 ### 1. Create theme folder and file
 ```sh

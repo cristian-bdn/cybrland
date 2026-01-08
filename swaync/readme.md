@@ -20,6 +20,7 @@
 - Make sure hyprland is installed: `sudo pacman -S hyprland`
 - Make sure swaync is installed: `sudo pacman -S kitty`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
+- [Github](https://github.com/ErikReider/SwayNotificationCenter)
 
 ### 1. Insert [config.json](../swaync/config.json)
 ```sh
