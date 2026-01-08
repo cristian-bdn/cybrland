@@ -24,6 +24,7 @@
 - Make sure hyprland is installed: `sudo pacman -S hyprland`
 - Make sure `git` is installed: `sudo pacman -S git`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
+- [Github](https://github.com/hyprwm/Hyprland) | [Arch Wiki](https://wiki.archlinux.org/title/Hyprland)
 
 ### 1. Backup existing config (if any)
 ```sh

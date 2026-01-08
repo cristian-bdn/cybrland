@@ -3,7 +3,7 @@
 # Cybrland
 **Cyberpunk dotfiles for Arch Hyprland, built on a deliberate [design philosophy](PHILOSOPHY.md)**
 
-**Version:** v1.0.0  |  **Status:** Stable (2026-01-01)  
+**Version:** v1.1.0  |  **Status:** Stable (2026-01-08)  
 
 ## Content
 - [What's Inside](#whats-inside)
@@ -25,14 +25,10 @@
 
 ## What's Inside
 ### Main
-- **Unified aesthetic** - Custom cyberpunk palette + Geist Mono Nerd Font across 15+ applications
+- **Unified aesthetic** - Custom cyberpunk palette for 15+ applications, 9 custom wallpapers
 - **Terminal-centric** - Fast, integrated TUI/CLI workflow with seamless component interaction
 - **Modular & flexible** - Install everything or cherry-pick components
 - **Documented** - Guides and comments for beginners + power-user patterns (systemd, sparse checkout)
-
-### Extras
-- **Wallpaper rotation daemon** - Pseudo-random cycling (never repeats consecutively; wallpapers included)
-- **Desktop brightness control** - Mousewheel adjustment via DDC/CI (OSD-free)
 
 ## Showcase
 <img src="./assets/inspiration/insp-main1.png">
@@ -91,6 +87,7 @@ Complete themes with full documentation:
 - **[cava](./cava/readme.md)** - CLI Audio visualizer
 - **[bat](./bat/readme.md)** - CLI Syntax-highlighted file viewer 
 - **[fastfetch](./fastfetch/readme.md)** - CLI System information tool  
+- **[newsboat](./newsboat/readme.md)** - CLI RSS/Atom reader
 
 ### 🟡 Testing
 - **[neovim](./nvim/readme.md)** - Beta - *Fully themed; polishing*
@@ -158,5 +155,3 @@ This project builds on the work of many talented creators:
 - [Cyberspace.online](https://cyberspace.online) - Absolutely great community where I found my digital home after many years of wandering and lurking. Their support was of immensely important to keep me going.
 
 If I missed anyone, feel free to open an issue!
-
-## License
