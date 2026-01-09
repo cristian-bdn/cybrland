@@ -106,11 +106,15 @@ $EDITOR ~/.config/hypr/hyprland.conf
 
 Find the `# === MONITORS ===` section and update:
 ```conf
-$first=DP-2
-$second=HDMI-A-1
+$first = # Change according to `hyprctl monitors` output
+# Example:
+# $first = DP-1
+# $second = DP-2
+# $third = HDMI-A-1
 
-monitor=$first,2560x1440@144Hz,1920x0,1
-monitor=$second,1920x1080@60,0x0,1
+monitor = $first,preferred,auto,1 # Change according to `hyprctl monitors` output
+# Example:
+# monitor = $first,2560x1440@144Hz,1920x0,1
 ```
 
 Find the `# === WORKSPACES === #` section and update:

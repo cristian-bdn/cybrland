@@ -35,6 +35,18 @@ ls -R ~/.config/rofi
 ```
 You should see: `config.rasi`, `launcher.rasi`, `style.rasi`, `theme/`, `scripts/`
 
+Make all scripts executable:
+```sh
+chmod +x \
+  ~/.config/rofi/scripts/clipboard/clipboard \
+  ~/.config/rofi/scripts/emoji/emoji \
+  ~/.config/rofi/scripts/keybindings/keybindings \
+  ~/.config/rofi/scripts/powermenu/powermenu \
+  ~/.config/rofi/scripts/screenshot/screenshot \
+  ~/.config/rofi/scripts/screenshot/screenshot_selection \
+  ~/.config/rofi/scripts/wallpaper/wallpaper \
+```
+
 <details>
 <summary>Expected file structure</summary>
 

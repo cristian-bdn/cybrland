@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-WALLPAPERS_DIR="$HOME/.config/hypr/theme/walls"
+WALLPAPERS_DIR="$HOME/.config/hypr/walls"
 LAST_WALL="$HOME/.cache/last_wallpaper.txt"
 TRIGGER="$HOME/.cache/wallpaper_trigger"
 STYLE="$HOME/.config/rofi/scripts/wallpaper/style.rasi"

@@ -86,8 +86,8 @@ cp -r ~/.config/kitty ~/.backup_configs/kitty 2>/dev/null
 cp -r ~/.config/waybar ~/.backup_configs/waybar 2>/dev/null
 cp -r ~/.config/rofi ~/.backup_configs/rofi 2>/dev/null
 cp -r ~/.config/btop ~/.backup_configs/btop 2>/dev/null
+# add other configs you want to backup
 ```
-Easy rollback if something breaks.
 
 ### 5. Review autostart services
 These dotfiles include systemd user services for:
@@ -131,13 +131,15 @@ Recommended sequence to avoid dependency issues:
 Each component has its own setup guide.
 
 ### Method 1: Individual Components (Recommended)
-Download only what you need using sparse checkout. See component-specific guides:
+Download only what you need manually or using sparse checkout. See component-specific guides:
 - [Hyprland](./hypr/readme.md)
 - [Waybar](./waybar/readme.md)
 - [Kitty](./kitty/readme.md)
 - ...  
 
 #### How sparse checkout works
+> [!WARNING]
+> This will overwrite existing configs in `~/.config/`. Back up your current setup first! See [step 4](#4-backup-existing-configs).
 ```sh
 # 1. Clone repository without files and commit history (metadata only)
 git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git
@@ -172,22 +174,49 @@ git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer
 ```
 
 ### Method 2. Full Repository (Power Users)
-Download all configs at once:
-
+> [!WARNING]
+> This will overwrite existing configs in `~/.config/`. Back up your current setup first! See [step 4](#4-backup-existing-configs).
+#### 1. Download repo
 ```sh
-git clone --depth=1 https://github.com/scherrer-txt/cybrland.git
-cd cybrland
-rm -rf assets stylus .git
+# Clone repo and cleanup
+git clone --depth=1 https://github.com/scherrer-txt/cybrland.git ~/cybrland
+cd ~/cybrland
+rm -rf assets stylus .git  # Saves ~170 MB
 
-# After download:
-# - Remove stylus, assets, and .git to save ~170 MB (not needed for the setup)
-# - Browse individual component directories and follow their readme.md files
+# Move configs to ~/.config
+for dir in */; do
+  [[ -d "$dir" ]] && cp -r "$dir" ~/.config/
+done
+cd ~ && rm -rf ~/cybrland
+
+# Make all scripts executable
+chmod +x \
+  ~/.config/rofi/scripts/clipboard/clipboard \
+  ~/.config/rofi/scripts/emoji/emoji \
+  ~/.config/rofi/scripts/keybindings/keybindings \
+  ~/.config/rofi/scripts/powermenu/powermenu \
+  ~/.config/rofi/scripts/screenshot/screenshot \
+  ~/.config/rofi/scripts/screenshot/screenshot_selection \
+  ~/.config/rofi/scripts/wallpaper/wallpaper \
+  ~/.config/waybar/scripts/* \
+  ~/.config/hypr/scripts/* \
 ```
+
+**How it works:**
+1. Clones repo with minimal history (`--depth=1`)
+2. Removes unnecessary files (assets, stylus source, git history)
+3. Copies all config directories to `~/.config/`
+4. Cleans up temporary clone
+5. Makes scripts executable
+
+#### 2. Adjust
+You will need to adjust monitor settings for [waybar](./waybar/readme.md) and [hyprland](./hypr/readme.md), see documentation for guidance.
 
 ## Post-installation Verification
 After setup, test these components:  
 
 - **Visual/UI**:  
+  - [ ] Monitors are working properly
   - [ ] Waybar displays correctly (modules, colors, icons)  
   - [ ] Rofi launchers work (app launcher, power menu, etc)  
   - [ ] Kitty colors match screenshots  
