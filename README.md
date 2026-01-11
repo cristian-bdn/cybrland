@@ -1,14 +1,20 @@
 ![Cybrland banner](./assets/banner.jpg)
 
 # Cybrland
-**Cyberpunk dotfiles for Arch Hyprland, built on a deliberate [design philosophy](PHILOSOPHY.md)**
+**Cyberpunk design system**
 
-**Version:** v1.1.0  |  **Status:** Stable (2026-01-08)  
+**Version:** v1.1.1  |  **Status:** Stable (2026-01-11)  
+**[Design Philosophy](PHILOSOPHY.md)**  |  **[AI Usage Disclosure](AI-DISCLOSURE.md)**  
+Daily driven on Arch + Hyprland, individual themes work anywhere  
+
+<p align="center">
+  <a href="https://stand-with-ukraine.pp.ua/">
+    <img alt="standwithukraine" src="https://img.shields.io/badge/Support-Ukraine-FFC93C?style=flat-square&labelColor=07689F">
+  </a>
+</p>
 
 ## Content
 - [What's Inside](#whats-inside)
-  - [Main](#main)
-  - [Extras](#extras)
 - [Showcase](#showcase)
 - [Included Themes](#included-themes)
   - [Core System](#-core-system)
@@ -24,11 +30,11 @@
 - [License](#license)
 
 ## What's Inside
-### Main
-- **Unified aesthetic** - Custom cyberpunk palette for 15+ applications, 9 custom wallpapers
-- **Terminal-centric** - Fast, integrated TUI/CLI workflow with seamless component interaction
-- **Modular & flexible** - Install everything or cherry-pick components
-- **Documented** - Guides and comments for beginners + power-user patterns (systemd, sparse checkout)
+- **Unified aesthetic** - Custom cyberpunk palette (Cybrcolors) + 9 hand-crafted wallpapers (Cybrpapers)  
+- **Theme collection** - Custom themes for 17+ applications  
+- **Terminal-centric workflow** - Fast, integrated TUI/CLI tools  
+- **Modular by design** - Use the full setup or cherry-pick individual themes  
+- **Beginner-friendly docs** - Step-by-step guides with explanations + advanced patterns for power users  
 
 ## Showcase
 <img src="./assets/inspiration/insp-main1.png">
@@ -91,14 +97,14 @@ Complete themes with full documentation:
 
 ### 🟡 Testing
 - **[neovim](./nvim/readme.md)** - Beta - *Fully themed; polishing*
-- **[firefox](./firefox/readme.md)** - Alpha - *Themed; major refactor planned*
+- **[firefox](./firefox/readme.md)** - Alpha - *Fully themed; major refactor planned*
 - **Cybrcursors** - Alpha - *Fully themed; polishing*
 - **VSCode** - Alpha - *Early stage*
-- **Obsidian** - Alpha - *Plugin-based, standalone theme planned*
+- **Obsidian** - Alpha - *Standalone theme planned*
 
 ## How To Install
-1. Follow the [Installation Guide](INSTALL.md) for in-depth guidance, installation order, backups creation and troubleshooting (**safest & recommended; beginner-friendly**)
-2. Read individual readme.md files in this repo for modular installation
+**New users**: Follow the [Installation Guide](INSTALL.md) for step-by-step setup, backups, and troubleshooting
+**Experienced users**: Check individual `readme.md` files for modular installation
 
 ## Related Projects
 - [Cybrpapers](https://github.com/scherrer-txt/cybrpapers) - Hand-crafted wallpaper collection
@@ -148,7 +154,7 @@ This project builds on the work of many talented creators:
 **Theming & aesthetics:**
 - [Catppuccin](https://github.com/catppuccin/catppuccin) - This project showed me what's possible with themes, it's overall scope is inspiration and aspiration at the same time
 - [Cyberpunk 2077 UI Bible](https://www.behance.net/gallery/118663901/Cyberpunk-2077User-Interface-(Part-1)) - Endless source of inspiration and ideas (s/o [Vladimír Vilimovský](https://www.behance.net/vladimirvilimovsky), [Jakub Knapik](https://www.linkedin.com/in/jakub-knapik-56741931), [Robert Bielecki](http://robertbielecki.com/), [Imanol Delago Salazar](https://www.artstation.com/artwork/WKzrBG), [Marcin Stepien](https://www.artstation.com/artwork/GaVGaz), [Simon Besombes](https://www.artstation.com/artwork/285r4a), [Kamil Piotrowski](https://www.artstation.com/artwork/285lYa), [Zuzanna Dabrowa](https://www.artstation.com/artwork/d8RnZ1), [Wojciech Chalinski](https://www.artstation.com/artwork/2855DY), [Pawel Matuszak](https://www.artstation.com/artwork/NxeNDN), [Mateusz Walus](https://www.artstation.com/artwork/5X4OLO) and the army of unnamed and uncredited from CD Projekt RED, who made Cyberpunk 2077 possible)
-- tonsky's [Minimalist Syntax Highlight philosophy](https://tonsky.me/blog/syntax-highlighting/) - 
+- tonsky's [Minimalist Syntax Highlight philosophy](https://tonsky.me/blog/syntax-highlighting/) - This is what I think is optimal and ideal syntax highlighting; inspiration for upcoming system-wide highlighting unification
 
 **Community:**
 - [r/unixporn](https://reddit.com/r/unixporn) - Their [feedback](https://www.reddit.com/r/unixporn/comments/1ouzvfy/hyprland_cybrland_v010/) was the biggest impulse for me to release the dotfiles.
