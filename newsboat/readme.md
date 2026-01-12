@@ -21,7 +21,7 @@
 
 ## Steps
 ### 0. Before you start
-- Make sure [Geist Mono Nerd Font](../INSTALL.md##Prerequisites&Setup) is installed
+- Make sure [Geist Mono Nerd Font](../INSTALL.md#prerequisites--setup) is installed
 - Make sure newsboat is installed: `sudo pacman -S newsboat`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
 - [Github](https://github.com/newsboat/newsboat) | [Arch wiki](https://wiki.archlinux.org/title/Newsboat)

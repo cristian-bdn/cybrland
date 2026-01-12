@@ -13,7 +13,7 @@
 
 ## Steps
 ### 0. Before you start
-- Make sure [Geist Mono Nerd Font](../INSTALL.md##Prerequisites&Setup) is installed
+- Make sure [Geist Mono Nerd Font](../INSTALL.md#prerequisites--setup) is installed
 - Make sure fish is installed: `sudo pacman -S fish`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
 - [Github](https://github.com/fish-shell/fish-shell) | [Arch Wiki](https://wiki.archlinux.org/title/Fish)

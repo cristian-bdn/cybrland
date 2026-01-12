@@ -16,7 +16,7 @@
 
 ## Steps
 ### 0. Before you start
-- Make sure [Geist Mono Nerd Font](../INSTALL.md##Prerequisites&Setup) is installed
+- Make sure [Geist Mono Nerd Font](../INSTALL.md#prerequisites--setup) is installed
 - Make sure hyprland is installed: `sudo pacman -S hyprland` and theme is applied  
 - Make sure swaync is installed: `sudo pacman -S kitty`
 - Make sure `git` is installed: `sudo pacman -S git`
