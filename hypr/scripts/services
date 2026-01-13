@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+killall swaync hyprpaper waybar hypridle 2>/dev/null
+hyprpaper &
 waybar &
 swaync &
 hypridle &
