@@ -119,21 +119,24 @@ window#waybar.hidden {
 	background-image: url('svg/no1-left.svg');
 	background-position: left;
 	background-repeat: no-repeat;
-	background-size: contain;
+	/* background-size: contain; */
+  background-size: 100% 100%;
 }
 
 #custom-arrow-right-no1 {
 	background-image: url('svg/no1-right.svg');
 	background-position: right;
 	background-repeat: no-repeat;
-	background-size: contain;
+	/* background-size: contain; */
+  background-size: 100% 100%;
 }
 
 #custom-arrow-left-re0 {
 	background-image: url('svg/re0-left.svg');
 	background-position: left;
 	background-repeat: no-repeat;
-	background-size: contain;
+	/* background-size: contain; */
+  background-size: 100% 100%;
 	background-color: @no1;
 }
 
@@ -141,7 +144,8 @@ window#waybar.hidden {
 	background-image: url('svg/re0-right.svg');
 	background-position: right;
 	background-repeat: no-repeat;
-	background-size: contain;
+	/* background-size: contain; */
+  background-size: 100% 100%;
 	background-color: @no1;
 }
 
@@ -149,7 +153,8 @@ window#waybar.hidden {
 	background-image: url('svg/gr0-left.svg');
 	background-position: left;
 	background-repeat: no-repeat;
-	background-size: contain;
+	/* background-size: contain; */
+  background-size: 100% 100%;
 	background-color: @no1;
 }
 
@@ -157,7 +162,8 @@ window#waybar.hidden {
 	background-image: url('svg/gr0-right.svg');
 	background-position: right;
 	background-repeat: no-repeat;
-	background-size: contain;
+	/* background-size: contain; */
+  background-size: 100% 100%;
 	background-color: @no1;
 }
 
@@ -343,9 +349,9 @@ window#waybar.hidden {
 /* === UPDATES === */
 
 #custom-updates {
-	color: @wh0;
-	font-size: 20px;
-	margin: 0 20px;
+	color: @re0;
+	background-color: @no1;
+	padding: 0 20px;
 }
 
 #custom-updates:hover {
